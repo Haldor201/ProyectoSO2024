@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>PRODUCTOS</title>
+    <style>
+        .tablaProductos table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+
+        }
+
+        .tablaProductos th, .tablaProductos td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .tablaProductos th {
+            background-color: #f2f2f2;
+        }
+        .popup {
+    display: none;
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Barra de navegaci�n -->
+    <header>
+        <nav class="navbar-top">
+            <ul class="navbar-top-ul">
+
+                <li class="navbar-top-item">
+                    <a href="#" class="navbar-top-links">
+                        <!-- <i class="zmdi zmdi-chevron-down"></i> -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar">
+            <header class="nabvar-mobile is-size-5-mobile">
+            </header>
+            <nav class="nav-menu --nav-dark-light" id="mySidenav">
+            </nav>
+        </nav>
+    </header>
+    <!-- Banner -->
+    <div class="banner banner-second">
+        <div class="banner-container ">
+            <h1>PRODUCTOS</h1>
+        </div>
+    </div>
+    <div id="popupContainer" class="popup">
+        <span class="close" onclick="cerrarPopup()">&times;</span>
+        <tbody id="productDetailsBody">
+            <tr>
+                <td>Nombre:</td>
+                <td><input type="text" id="nombreInput" name="nombre1"></td>
+            </tr>
+            <tr>
+                <td>Descricion:</td>
+                    <td><input type="text" id="descripcionInput" name="descripcion1"></td>
+                </tr>
+                <tr>
+                    <td>Precio:</td>
+                    <td><input type="text" id="precioInput" name="precio1"></td>
+                </tr>
+                <tr>
+                    <td>Stock:</td>
+                    <td><input type="text" id="stockInput" name="stock1"></td>
+                </tr>
+                <tr>
+                    <td>Categoria:</td>
+                    <td><input type="text" id="categoriaInput" name="categoria1"></td>
+                </tr>
+                <br>
+                <button class="btn btn-outline-dark" id="guardar"> Guardar</button>
+            </tbody>
+    </div>
+    <center>
+        <h2>Tabla de Productos</h2>
+        <a href="AgregarProducto.html" class="botonAgregar">Agrega un producto</a>
+        <p>  </p>
+        <div class="tablaProductos">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Categoria</th>
+                        <th>Descricion</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody  id="productTableBody">
+
+                </tbody>
+            </table>
+        </div>
+    </center>
+
+
+
+
+
+    <footer class="footer">
+
+        <div class="column is-full">
+            <div class="footer-socials">
+                <p>Cont�ctanos al (01)7168394 </p>
+                <p>Lima, Per�</p>
+            </div>
+        </div>
+
+        <div class="footer-bar-top">
+
+            <div class="container">
+
+                <a class="footer-bar-top-links" href="#">2024 MINIMARKET</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/productos.js"></script>
+
+
+</body>
+
+</html>

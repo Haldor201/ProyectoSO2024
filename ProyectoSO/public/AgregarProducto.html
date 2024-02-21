@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>AGREGAR PRODUCTO</title>
+
+    <style>
+        .tablaIngreso table {
+            margin-top: 20px;
+        }
+
+        .tablaIngreso th, .tablaIngreso td {
+            padding: 15px;
+        }
+
+        .tablaIngreso th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra de navegaci�n -->
+    <header>
+        <nav class="navbar-top">
+
+        </nav>
+        <nav class="navbar">
+            <header class="nabvar-mobile is-size-5-mobile">
+            </header>
+            <nav class="nav-menu --nav-dark-light" id="mySidenav">
+            </nav>
+        </nav>
+    </header>
+    <!-- Banner -->
+    <div class="banner banner-second">
+        <div class="banner-container ">
+            <h1>AGREGA PRODUCTOS</h1>
+        </div>
+    </div>
+
+    <center>
+        <h2>Ingreso de Informacion</h2>
+
+        <div class="tablaIngreso">
+            <table>
+
+                <tbody id="productDetailsBody">
+                    <tr>
+                        <td>Nombre:</td>
+                        <td><input type="text" id="nombreInput" name="nombre1"></td>
+                    </tr>
+                    <tr>
+                        <td>Descripcion:</td>
+                        <td><input type="text" id="descripcionInput" name="descripcion1"></td>
+                    </tr>
+                    <tr>
+                        <td>Precio:</td>
+                        <td><input type="text" id="precioInput" name="precio1"></td>
+                    </tr>
+                    <tr>
+                        <td>Stock:</td>
+                        <td><input type="text" id="stockInput" name="stock1"></td>
+                    </tr>
+                    <tr>
+                        <td>Categoria:</td>
+                        <td><input type="text" id="categoriaInput" name="categoria1"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <button class="btn btn-outline-dark" id="agregar">Agregar Producto</button>
+    </center>
+
+
+
+    <footer class="footer">
+
+        <div class="column is-full">
+            <div class="footer-socials">
+                <p>Cont�ctanos al (01)7168394 </p>
+                <p>Lima, Per�</p>
+            </div>
+        </div>
+
+        <div class="footer-bar-top">
+
+            <div class="container">
+
+                <a class="footer-bar-top-links" href="#">2024 MINIMARKET</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/agregar_producto.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>PRODUCTO</title>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar-top">
+            <ul class="navbar-top-ul">
+
+                <li class="navbar-top-item">
+                    <a href="#" class="navbar-top-links">
+                        <i class="zmdi zmdi-shopping-cart"></i> Carrito
+                        <!-- <i class="zmdi zmdi-chevron-down"></i> -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar">
+            <header class="nabvar-mobile is-size-5-mobile">
+                <a class="navbar-mobile-link has-text-white" href="#" id="btn-mobile"><i class="zmdi zmdi-menu"></i></a>
+                <a class="navbar-mobile-link has-text-white" href="inicio.html">MINIMARKET</a>
+                <a class="navbar-mobile-link has-text-white" href="#"><i class="zmdi zmdi-shopping-cart"></i> Vacio</a>
+            </header>
+            <nav class="nav-menu --nav-dark-light" id="mySidenav">
+                <form class="form-group " action="#">
+                    <div class="form-group-container">
+                        <span class="form-group-icon"><i class="zmdi zmdi-search"></i></span>
+                        <input type="text" class="form-group-input" placeholder="Buscar...">
+                    </div>
+                </form>
+
+                <a class="is-hidden-mobile brand is-uppercase has-text-weight-bold has-text-dark" href="inicio.html">MINIMARKET</a>
+                <ul class="nav-menu-ul">
+                    <li class="nav-menu-item" id="Categorias">
+                        <a class="nav-menu-link link-submenu" href="#">
+                            Categorias <i class="zmdi zmdi-chevron-down"></i>
+                        </a>
+                        <div class="container-sub-menu">
+                            <ul class="sub-menu-ul">
+
+                                <ul class="sub-menu-ul">
+                                    <li class="nav-menu-item"><a class="nav-menu-link" href="Categoria.html">Panaderia y cereales</a></li>
+                                    <li class="nav-menu-item">
+                                        <a class="nav-menu-link" href="Categoria.html">Carnes y embutidos</a>
+                                    </li>
+                                    <li class="nav-menu-item"><a class="nav-menu-link" href="Categoria.html">Productos secos</a></li>
+                                    <li class="nav-menu-item"><a class="nav-menu-link" href="Categoria.html">Frutas y verduras</a></li>
+                                </ul>
+
+                            </ul>
+                            <ul class="sub-menu-ul">
+
+                                <ul class="sub-menu-ul">
+                                    <li class="nav-menu-item"><a class="nav-menu-link" href="Categoria.html">Snacks</a></li>
+                                    <li class="nav-menu-item"><a class="nav-menu-link" href="Categoria.html">Productos de limpieza</a></li>
+                                    <li class="nav-menu-item"><a class="nav-menu-link" href="Categoria.html">Cuidado personal</a></li>
+                                    <li class="nav-menu-item"><a class="nav-menu-link" href="Categoria.html">Enlatados</a></li>
+                                </ul>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-menu-item"><a href="ProductoLista.html" class="nav-menu-link">Productos</a></li>
+                    <li class="nav-menu-item"><a href="Ubicacion.html" class="nav-menu-link">Ubicanos</a></li>
+                    <li class="nav-menu-item"><a href="Nosotros.html" class="nav-menu-link active">Sobre Nosotros</a></li>
+                    <li class="nav-menu-item"><a href="RegistroSesion.html" class="nav-menu-link">Registro e Inicio de Sesion</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    <!-- Banner -->
+    <div class="banner banner-second">
+        <div class="banner-container ">
+            <h1>PRODUCTOS</h1>
+            <h2>¡Rápido, fresco, a tu alcance!</h2>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="columns">
+            <div class="column is-two-fifths-desktop">
+                <div class="slider" id="slider">
+                    <div class="slider-img-container">
+                        <img src="img/1.png" alt="camiseta" class="active slider-item">
+                    </div>
+                    <div class="slider-img-container">
+                        <img src="img/1.png" alt="camiseta" class="slider-item">
+                    </div>
+
+                    <div class="slider-button-left slider-buttons" onclick="previus()">
+                        <i class="zmdi zmdi-chevron-left zmdi-hc-3x"></i>
+                    </div>
+                    <div class="slider-button-right slider-buttons" onclick="next()">
+                        <i class="zmdi zmdi-chevron-right zmdi-hc-3x"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <h3 class="is-size-4">Classic Sweatshirt</h3>
+                <div class="course-rating-container">
+                    <div class="rating-stars" style="--rating: 86%">
+                    </div>
+                </div>
+                <p class="">
+                    3 comentarios | Compartir: <a class="icon-socials" href="#">
+                        <i class="zmdi zmdi-facebook"></i>
+                    </a>
+                    <a class="icon-socials" href="#"><i class="zmdi zmdi-twitter"></i></a>
+                    <a class="icon-socials" href="#"><i class="zmdi zmdi-instagram"></i></a>
+                    <a class="icon-socials" href="#"><i class="zmdi zmdi-pinterest"></i></a>
+                    <a class="icon-socials" href="#"><i class="zmdi zmdi-email"></i></a>
+                </p>
+                <h2 class="price is-size-4"><sup>S/.</sup>89.99</h2>
+                <p class="has-text-grey"> <strong>Disponibilidad:</strong> En stock</p>
+                <p class="has-text-grey"><strong>Código del procuto: </strong>#56843265</p>
+
+                <form action="#" class="form-control">
+                    <div class="columns is-multiline">
+
+
+                        <div class="column is-one-third">
+                            <label for="quality">Cantidad</label>
+                            <input class="form-control-field" type="number">
+                        </div>
+                        <div class="column is-full is-marginless">
+                            <button class="btn btn-default btn-outline">
+                                <i class="zmdi zmdi-shopping-cart"></i>
+                                Agregar al carrito
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="columns is-tablet">
+            <div class="column">
+                <div class="tabs-container">
+                    <ul class="tabs" id="tabs">
+                        <li class="tabs-item active-tab">Descripción</li>
+                    </ul>
+                    <div class="tabs-panels">
+                        <div class="tab-panel active-panel">
+                            <div class="container">
+                                <div class="columns">
+                                    <div class="column">
+                                        <h2 class="is-size-4">Descripción</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, natus.
+                                            Doloribus
+                                            neque
+                                            tempore
+                                            qui saepe voluptate. eserunt nihil doloribus facilis quos eos, tempore magni
+                                            iure magnam
+                                            impedit
+                                            reiciendis eligendi dignissimos.
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+
+        <div class="column is-full">
+            <div class="footer-socials">
+                <p>Contáctanos al (01)7168394 </p>
+                <p>Lima, Perú</p>
+            </div>
+        </div>
+
+        <div class="footer-bar-top">
+
+            <div class="container">
+
+                <a class="footer-bar-top-links" href="#">2024 MINIMARKET</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
