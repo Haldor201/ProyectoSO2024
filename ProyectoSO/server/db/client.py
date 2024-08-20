@@ -9,6 +9,6 @@ from pymongo import MongoClient
 
 #Base de datos remota
 #                                                                                               nombre de la base de datos
-db_client=MongoClient("mongodb+srv://calderonhaldor385:Vp9Szac8E3nvDEWZ@so.de31nf8.mongodb.net/").SO
+db_client=MongoClient("").SO
 
 #s
